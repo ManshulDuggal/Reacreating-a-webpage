@@ -1,0 +1,194 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* IMAGE GALLERY */
+.image-gallery {
+  margin: 1rem auto;
+  align-items: center;
+  width: 90%;
+}
+
+/* IMAGE STYLING */
+
+.main-image {
+  width: 100%;
+}
+.main-image img {
+  width: 100%;
+}
+.slider-images {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 20%;
+  max-height: 90px;
+}
+.slider-images img {
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.slide-navigation {
+  color: rgb(255, 255, 255);
+  pointer-events: all;
+  cursor: pointer;
+  font-size: 3rem;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+/* IMAGE GALLERY END*/
+
+/* CONTECNT SECTION */
+.sub-heading,
+.content {
+  color: rgb(51, 51, 51);
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+}
+
+.heading {
+  font-size: 1rem;
+}
+.content {
+  padding: 2rem;
+}
+.num,
+.review h5,
+.review-wrapper h5 {
+  padding: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+/* rating and cost*/
+
+.rating {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: wrap row;
+}
+.rating img {
+  height: 3%;
+  width: 3%;
+}
+
+.review h5,
+.review {
+  margin: 0.5rem 0rem;
+  display: flex;
+}
+
+.review span {
+  margin: 0.5rem 0rem;
+  color: green;
+}
+.cost {
+  font-size: 1rem;
+  padding: 2rem 0rem;
+}
+
+.submit-review {
+  margin-top: 0.4rem;
+  text-decoration: underline;
+}
+
+/* CART BUTTONS */
+.cart button {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background: white;
+  border: solid black 1px;
+  transition: all 1s ease-out;
+}
+.cart button:hover {
+  background: rgb(36, 36, 36);
+  color: white;
+  cursor: pointer;
+}
+
+/* CONTECNT SECTION  END*/
+
+/* FOOTER */
+
+.heading-footer {
+  width: 70%;
+  margin: auto;
+  padding: 4rem;
+  display: flex;
+  flex-flow: row;
+}
+.heading-footer p {
+  width: 80%;
+}
+.logo {
+  color: rgb(36, 36, 36);
+}
+
+.subheading p {
+  font-size: 0.8rem;
+  line-height: 2rem;
+  margin: 1rem 0rem;
+}
+
+/* FOOTER END */
+
+/* ALIGNING THE SECTIONS USING FLEX */
+.main {
+  padding: 3rem;
+  margin: auto;
+  flex-flow: row;
+  display: flex;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+  .main {
+    display: block;
+  }
+  .slide-navigation {
+    top: 20%;
+    left: 70%;
+    color: black;
+    font-size: 2rem;
+  }
+
+  .heading {
+    font-size: 0.71rem;
+  }
+  .num,
+  .review h5,
+  .review-wrapper h5 {
+    font-size: 0.6rem;
+  }
+
+  .sub-heading,
+  .content {
+    padding: 1rem 0rem;
+    font-size: 0.6rem;
+  }
+
+  .cart button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .heading-footer {
+    display: block;
+    width: 80%;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  .sub-heading-footer p {
+    padding: 1rem 0rem;
+  }
+}
